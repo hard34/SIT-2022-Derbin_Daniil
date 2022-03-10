@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+void fib1(int a, int b, int i)
+{
+    if (i == 0) { return; }
+    cout << a << endl;
+    fib1(b,a+b, i-1);
+}
+
+void fib(int n)
+{
+    fib1(1,1,n);
+}
+
+int main() {
+    fib(10);
+    return 0;
+}
