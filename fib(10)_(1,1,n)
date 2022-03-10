@@ -3,7 +3,9 @@ using namespace std;
 
 void fib1(int a, int b, int i)
 {
-    if (i == 0) { return; }
+    if (i == 0) { 
+       return; 
+    }
     cout << a << endl;
     fib1(b,a+b, i-1);
 }
